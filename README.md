@@ -1,26 +1,24 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Software-Engineer.gif" width="60" align="center">
+  <img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExOWI2YjQyMzhkODFlYmMxZjFmOGY0YmI4NGE2YzM0YzM0YmI4NGE2JjlcPWUzX3MvZWxvZ2V0X3ZpZGVvL2ZhY2VzLzUxMi5naWY/giphy.gif" width="100%" alt="Goku Ultra Instinct">
 </p>
 
 <h1 align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=32&duration=3000&pause=1000&color=00FF66&center=true&vCenter=true&width=500&lines=HASSAN+SIAL;FULL-STACK+ENGINEER;AI+%26+SYSTEMS+BUILDER;ALWAYS+SHIPPING" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=32&duration=3000&pause=1000&color=FF9900&center=true&vCenter=true&width=500&lines=P3RM4;ULTRA+INSTINCT+BUILDER;FULL-STACK+ENGINEER;ALWAYS+TRAINING" alt="Typing SVG" />
 </h1>
 
 <p align="center">
-  <img src="https://komarev.com/ghpvc/?username=hassansial&color=00ff66&style=for-the-badge&label=PROFILE+VIEWS" alt="Profile Views"/>
-  <img src="https://img.shields.io/badge/STATUS-READY%20FOR%20IMPACT-00FF66?style=for-the-badge&logo=rocket&logoColor=black" alt="Status"/>
-  <img src="https://img.shields.io/badge/SECURITY-HARDENED-blueviolet?style=for-the-badge&logo=shield&logoColor=white" alt="Security"/>
+  <img src="https://komarev.com/ghpvc/?username=p3rm4&color=FF9900&style=for-the-badge&label=PROFILE+VIEWS" alt="Profile Views"/>
+  <img src="https://img.shields.io/badge/POWER-OVER+9000-FFD700?style=for-the-badge&logo=dragon&logoColor=black" alt="Power Level"/>
 </p>
 
 ---
 
-### 💻 `> root@hassansial:~#` whoami
+### 💻 `> root@p3rm4:~#` whoami
 
 ```json
 {
-  "operator": "Hassan Sial",
+  "warrior": "P3rm4",
   "domain": "Full-Stack Web & AI Development",
-  "architecture": ["Scalable Backends", "Smart Automation", "Secure Web Systems"],
-  "mission": "Engineering high-performance applications with zero friction.",
-  "status": "Online & Coding"
+  "techniques": ["Scalable Backends", "Smart Automation", "Secure Web Systems"],
+  "status": "Training & Coding at Peak Performance"
 }
