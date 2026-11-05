@@ -1,0 +1,140 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 380" width="100%" height="100%">
+  <defs>
+    <linearGradient id="archBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#080A0F" />
+      <stop offset="50%" stop-color="#0D1117" />
+      <stop offset="100%" stop-color="#170609" />
+    </linearGradient>
+    <linearGradient id="nodeGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1A1F29" />
+      <stop offset="100%" stop-color="#0F131A" />
+    </linearGradient>
+    <linearGradient id="coreNodeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2B070C" />
+      <stop offset="100%" stop-color="#140407" />
+    </linearGradient>
+    <filter id="neonGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="4" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+    <pattern id="circuitGrid" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#8B0000" stroke-width="0.4" stroke-opacity="0.18" />
+    </pattern>
+    <style>
+      .mono { font-family: 'Fira Code', 'JetBrains Mono', Consolas, monospace; }
+      .flowLine { stroke-dasharray: 8 8; animation: dashFlow 1.2s linear infinite; }
+      @keyframes dashFlow {
+        to { stroke-dashoffset: -16; }
+      }
+    </style>
+
+    <!-- Motion Paths for Glowing Data Packets -->
+    <path id="path1" d="M 190 190 L 320 190" />
+    <path id="path2Top" d="M 490 190 C 535 190, 535 85, 580 85" />
+    <path id="path2Mid" d="M 490 190 L 580 190" />
+    <path id="path2Bot" d="M 490 190 C 535 190, 535 295, 580 295" />
+    <path id="path3Top" d="M 750 85 C 795 85, 795 190, 830 190" />
+    <path id="path3Mid" d="M 750 190 L 830 190" />
+    <path id="path3Bot" d="M 750 295 C 795 295, 795 190, 830 190" />
+  </defs>
+
+  <!-- Background -->
+  <rect x="2" y="2" width="996" height="376" rx="14" fill="url(#archBg)" stroke="#8B0000" stroke-width="2" />
+  <rect x="2" y="2" width="996" height="376" rx="14" fill="url(#circuitGrid)" />
+
+  <!-- Header Title -->
+  <text x="500" y="34" class="mono" font-size="13" font-weight="700" fill="#E63946" text-anchor="middle" letter-spacing="3">
+    ⚡ P3RM4 REAL-TIME SYSTEM ARCHITECTURE &amp; DATA PIPELINE
+  </text>
+
+  <!-- ================= CIRCUIT CONNECTION LINES ================= -->
+  <g fill="none" stroke-width="2.2">
+    <use href="#path1" stroke="#8B0000" class="flowLine" />
+    <use href="#path2Top" stroke="#E63946" class="flowLine" />
+    <use href="#path2Mid" stroke="#00F5D4" class="flowLine" />
+    <use href="#path2Bot" stroke="#E63946" class="flowLine" />
+    <use href="#path3Top" stroke="#8B0000" class="flowLine" />
+    <use href="#path3Mid" stroke="#00F5D4" class="flowLine" />
+    <use href="#path3Bot" stroke="#8B0000" class="flowLine" />
+  </g>
+
+  <!-- ================= ANIMATED GLOWING DATA PACKETS ================= -->
+  <circle r="5" fill="#00F5D4" filter="url(#neonGlow)">
+    <animateMotion dur="1.4s" repeatCount="indefinite"><mpath href="#path1" /></animateMotion>
+  </circle>
+  <circle r="5" fill="#E63946" filter="url(#neonGlow)">
+    <animateMotion dur="1.8s" repeatCount="indefinite"><mpath href="#path2Top" /></animateMotion>
+  </circle>
+  <circle r="5" fill="#00F5D4" filter="url(#neonGlow)">
+    <animateMotion dur="1.5s" repeatCount="indefinite"><mpath href="#path2Mid" /></animateMotion>
+  </circle>
+  <circle r="5" fill="#E63946" filter="url(#neonGlow)">
+    <animateMotion dur="1.9s" repeatCount="indefinite"><mpath href="#path2Bot" /></animateMotion>
+  </circle>
+  <circle r="5" fill="#E63946" filter="url(#neonGlow)">
+    <animateMotion dur="1.7s" repeatCount="indefinite"><mpath href="#path3Top" /></animateMotion>
+  </circle>
+  <circle r="5" fill="#00F5D4" filter="url(#neonGlow)">
+    <animateMotion dur="1.4s" repeatCount="indefinite"><mpath href="#path3Mid" /></animateMotion>
+  </circle>
+  <circle r="5" fill="#E63946" filter="url(#neonGlow)">
+    <animateMotion dur="1.8s" repeatCount="indefinite"><mpath href="#path3Bot" /></animateMotion>
+  </circle>
+
+  <!-- ================= ARCHITECTURE NODES ================= -->
+
+  <!-- Node 1: Client / Edge -->
+  <g transform="translate(30, 140)">
+    <rect width="160" height="100" rx="10" fill="url(#nodeGrad)" stroke="#58A6FF" stroke-width="1.8" />
+    <text x="80" y="34" class="mono" font-size="12" font-weight="700" fill="#58A6FF" text-anchor="middle">CLIENT &amp; EDGE</text>
+    <text x="80" y="56" class="mono" font-size="10.5" fill="#C9D1D9" text-anchor="middle">Cloudflare CDN</text>
+    <text x="80" y="74" class="mono" font-size="10.5" fill="#8B949E" text-anchor="middle">Web · Mobile · CLI</text>
+  </g>
+
+  <!-- Node 2: P3RM4 Core Gateway -->
+  <g transform="translate(320, 130)">
+    <rect width="170" height="120" rx="12" fill="url(#coreNodeGrad)" stroke="#E63946" stroke-width="2.5" filter="url(#neonGlow)" />
+    <text x="85" y="38" class="mono" font-size="13" font-weight="800" fill="#FFFFFF" text-anchor="middle">P3RM4 GATEWAY</text>
+    <text x="85" y="60" class="mono" font-size="10.5" fill="#E63946" text-anchor="middle" font-weight="700">ZERO-TRUST AUTH</text>
+    <text x="85" y="80" class="mono" font-size="10" fill="#C9D1D9" text-anchor="middle">Rate Limit · Router</text>
+    <text x="85" y="98" class="mono" font-size="10" fill="#00F5D4" text-anchor="middle">REST · WebSockets</text>
+  </g>
+
+  <!-- Node 3A: AI Engine (Top) -->
+  <g transform="translate(580, 42)">
+    <rect width="170" height="86" rx="10" fill="url(#nodeGrad)" stroke="#E63946" stroke-width="1.8" />
+    <text x="85" y="30" class="mono" font-size="12" font-weight="700" fill="#E63946" text-anchor="middle">🧠 AI AGENT CORE</text>
+    <text x="85" y="50" class="mono" font-size="10" fill="#C9D1D9" text-anchor="middle">LLM Orchestration</text>
+    <text x="85" y="68" class="mono" font-size="10" fill="#8B949E" text-anchor="middle">RAG · Tool Calling</text>
+  </g>
+
+  <!-- Node 3B: Full-Stack Services (Middle) -->
+  <g transform="translate(580, 147)">
+    <rect width="170" height="86" rx="10" fill="url(#nodeGrad)" stroke="#00F5D4" stroke-width="1.8" />
+    <text x="85" y="30" class="mono" font-size="12" font-weight="700" fill="#00F5D4" text-anchor="middle">⚡ MICROSERVICES</text>
+    <text x="85" y="50" class="mono" font-size="10" fill="#C9D1D9" text-anchor="middle">Node · Python · Rust</text>
+    <text x="85" y="68" class="mono" font-size="10" fill="#8B949E" text-anchor="middle">Async Event Workers</text>
+  </g>
+
+  <!-- Node 3C: Automation Cluster (Bottom) -->
+  <g transform="translate(580, 252)">
+    <rect width="170" height="86" rx="10" fill="url(#nodeGrad)" stroke="#E63946" stroke-width="1.8" />
+    <text x="85" y="30" class="mono" font-size="12" font-weight="700" fill="#E63946" text-anchor="middle">🤖 AUTO CLUSTER</text>
+    <text x="85" y="50" class="mono" font-size="10" fill="#C9D1D9" text-anchor="middle">Playwright · Bots</text>
+    <text x="85" y="68" class="mono" font-size="10" fill="#8B949E" text-anchor="middle">Scheduled Pipelines</text>
+  </g>
+
+  <!-- Node 4: Data & Vector Layer -->
+  <g transform="translate(830, 130)">
+    <rect width="145" height="120" rx="12" fill="url(#coreNodeGrad)" stroke="#2EA043" stroke-width="2" />
+    <text x="72" y="38" class="mono" font-size="12" font-weight="800" fill="#2EA043" text-anchor="middle">DATA MATRIX</text>
+    <text x="72" y="60" class="mono" font-size="10.5" fill="#F1FAEE" text-anchor="middle">PostgreSQL</text>
+    <text x="72" y="78" class="mono" font-size="10.5" fill="#00F5D4" text-anchor="middle">Vector DB (RAG)</text>
+    <text x="72" y="96" class="mono" font-size="10" fill="#8B949E" text-anchor="middle">Redis Cache</text>
+  </g>
+
+  <!-- Bottom Telemetry Footer -->
+  <text x="500" y="362" class="mono" font-size="10.5" fill="#8B949E" text-anchor="middle" letter-spacing="1.5">
+    LIVE STREAMING PACKETS // END-TO-END ENCRYPTED // ARCHITECTED BY HASSAN SIAL (@P3RM4)
+  </text>
+</svg>
