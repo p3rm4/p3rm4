@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 290" width="100%" height="100%">
+  <defs>
+    <linearGradient id="cardBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0B0C14" />
+      <stop offset="50%" stop-color="#07080D" />
+      <stop offset="100%" stop-color="#0E0B1A" />
+    </linearGradient>
+    <linearGradient id="borderGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.45" />
+      <stop offset="50%" stop-color="#8B5CF6" stop-opacity="0.2" />
+      <stop offset="100%" stop-color="#EC4899" stop-opacity="0.4" />
+    </linearGradient>
+    <linearGradient id="titleGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="55%" stop-color="#E2E8F0" />
+      <stop offset="100%" stop-color="#38BDF8" />
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38BDF8" />
+      <stop offset="50%" stop-color="#8B5CF6" />
+      <stop offset="100%" stop-color="#F472B6" />
+    </linearGradient>
+    <radialGradient id="orbBlue" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.22" />
+      <stop offset="100%" stop-color="#38BDF8" stop-opacity="0" />
+    </radialGradient>
+    <radialGradient id="orbPurple" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#8B5CF6" stop-opacity="0.26" />
+      <stop offset="100%" stop-color="#8B5CF6" stop-opacity="0" />
+    </radialGradient>
+    <pattern id="dotMatrix" width="28" height="28" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1" fill="#94A3B8" fill-opacity="0.12" />
+    </pattern>
+    <style>
+      .sans { font-family: -apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', Roboto, Helvetica, sans-serif; }
+      .mono { font-family: 'JetBrains Mono', 'Fira Code', Consolas, monospace; }
+    </style>
+  </defs>
+
+  <!-- Main Bento Hero Container -->
+  <rect x="2" y="2" width="996" height="286" rx="24" fill="url(#cardBg)" stroke="url(#borderGrad)" stroke-width="1.5" />
+  <rect x="2" y="2" width="996" height="286" rx="24" fill="url(#dotMatrix)" />
+
+  <!-- Ambient Floating Aurora Orbs -->
+  <circle cx="180" cy="60" r="220" fill="url(#orbBlue)">
+    <animate attributeName="cx" values="180;240;180" dur="8s" repeatCount="indefinite" />
+  </circle>
+  <circle cx="820" cy="220" r="250" fill="url(#orbPurple)">
+    <animate attributeName="cx" values="820;750;820" dur="9s" repeatCount="indefinite" />
+  </circle>
+
+  <!-- Top Shimmer Accent Line -->
+  <rect x="350" y="2" width="300" height="2" rx="1" fill="url(#accentGrad)" />
+
+  <!-- Top Frosted Status Pill -->
+  <g transform="translate(335, 34)">
+    <rect width="330" height="30" rx="15" fill="#131624" fill-opacity="0.85" stroke="#334155" stroke-width="1" />
+    <circle cx="20" cy="15" r="4.5" fill="#10B981">
+      <animate attributeName="opacity" values="1;0.3;1" dur="2s" repeatCount="indefinite" />
+    </circle>
+    <text x="174" y="19.5" class="mono" font-size="11" font-weight="600" fill="#E2E8F0" text-anchor="middle" letter-spacing="1.4">
+      AVAILABLE FOR PROJECTS · @P3RM4
+    </text>
+  </g>
+
+  <!-- Main Aesthetic Name -->
+  <text x="500" y="128" class="sans" font-size="54" font-weight="800" fill="url(#titleGrad)" text-anchor="middle" letter-spacing="-1">
+    Hassan Sial
+  </text>
+
+  <!-- Clean Modern Tagline -->
+  <text x="500" y="166" class="sans" font-size="17" font-weight="400" fill="#94A3B8" text-anchor="middle" letter-spacing="0.2">
+     Crafting <tspan fill="#F8FAFC" font-weight="600">high-performance web apps</tspan>, <tspan fill="#38BDF8" font-weight="600">autonomous AI systems</tspan> &amp; <tspan fill="#C084FC" font-weight="600">modern digital experiences</tspan>.
+  </text>
+
+  <!-- Frosted Glass Bento Pills Row -->
+  <g transform="translate(150, 206)" class="sans" font-size="12.5" font-weight="600">
+    <!-- Pill 1 -->
+    <rect x="0" y="0" width="162" height="38" rx="12" fill="#111422" stroke="#1E293B" stroke-width="1.2" />
+    <text x="81" y="24" fill="#E2E8F0" text-anchor="middle">⚡ Full-Stack Web</text>
+
+    <!-- Pill 2 -->
+    <rect x="178" y="0" width="162" height="38" rx="12" fill="#111422" stroke="#1E293B" stroke-width="1.2" />
+    <text x="259" y="24" fill="#38BDF8" text-anchor="middle">✦ AI &amp; LLM Agents</text>
+
+    <!-- Pill 3 -->
+    <rect x="356" y="0" width="174" height="38" rx="12" fill="#111422" stroke="#1E293B" stroke-width="1.2" />
+    <text x="443" y="24" fill="#C084FC" text-anchor="middle">⚙ Smart Automation</text>
+
+    <!-- Pill 4 -->
+    <rect x="546" y="0" width="154" height="38" rx="12" fill="#111422" stroke="#1E293B" stroke-width="1.2" />
+    <text x="623" y="24" fill="#94A3B8" text-anchor="middle">🇵🇰 Based in PK</text>
+  </g>
+</svg>

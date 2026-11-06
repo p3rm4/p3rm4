@@ -1,0 +1,187 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 540" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bentoCard" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0D101B" />
+      <stop offset="100%" stop-color="#080A11" />
+    </linearGradient>
+    <linearGradient id="bentoAccentCard" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#111326" />
+      <stop offset="100%" stop-color="#090A12" />
+    </linearGradient>
+    <linearGradient id="glassBorder" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.35" />
+      <stop offset="50%" stop-color="#334155" stop-opacity="0.25" />
+      <stop offset="100%" stop-color="#8B5CF6" stop-opacity="0.35" />
+    </linearGradient>
+    <linearGradient id="cyanViolet" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38BDF8" />
+      <stop offset="100%" stop-color="#A855F7" />
+    </linearGradient>
+    <radialGradient id="glowCyan" cx="80%" cy="20%" r="60%">
+      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.16" />
+      <stop offset="100%" stop-color="#38BDF8" stop-opacity="0" />
+    </radialGradient>
+    <radialGradient id="glowViolet" cx="20%" cy="80%" r="65%">
+      <stop offset="0%" stop-color="#8B5CF6" stop-opacity="0.18" />
+      <stop offset="100%" stop-color="#8B5CF6" stop-opacity="0" />
+    </radialGradient>
+
+    <path id="flowArch1" d="M 115 200 L 255 200" />
+    <path id="flowArch2" d="M 355 200 L 495 200" />
+
+    <style>
+      .sans { font-family: -apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', Roboto, Helvetica, sans-serif; }
+      .mono { font-family: 'JetBrains Mono', 'Fira Code', Consolas, monospace; }
+      .dash { stroke-dasharray: 6 6; animation: moveDash 1.2s linear infinite; }
+      @keyframes moveDash { to { stroke-dashoffset: -12; } }
+    </style>
+  </defs>
+
+  <!-- =========================================================================
+       CARD 1 (TOP-LEFT, WIDE 640px): SYSTEM ARCHITECTURE & PRODUCT ENGINEERING
+       ========================================================================= -->
+  <g transform="translate(0, 0)">
+    <rect x="2" y="2" width="636" height="256" rx="22" fill="url(#bentoCard)" stroke="url(#glassBorder)" stroke-width="1.5" />
+    <rect x="2" y="2" width="636" height="256" rx="22" fill="url(#glowCyan)" />
+
+    <text x="32" y="42" class="mono" font-size="11" font-weight="600" fill="#38BDF8" letter-spacing="1.8">
+      01 // ARCHITECTURE &amp; FLOW
+    </text>
+    <text x="32" y="76" class="sans" font-size="22" font-weight="700" fill="#F8FAFC">
+      End-to-End Intelligent Systems
+    </text>
+    <text x="32" y="102" class="sans" font-size="13.5" fill="#94A3B8">
+      Designing seamless pipelines from modern reactive UIs to autonomous AI backends.
+    </text>
+
+    <!-- Animated Minimalist Nodes inside Card 1 -->
+    <use href="#flowArch1" stroke="#334155" stroke-width="2" class="dash" />
+    <use href="#flowArch2" stroke="#334155" stroke-width="2" class="dash" />
+
+    <circle r="4.5" fill="#38BDF8">
+      <animateMotion dur="1.5s" repeatCount="indefinite"><mpath href="#flowArch1" /></animateMotion>
+    </circle>
+    <circle r="4.5" fill="#C084FC">
+      <animateMotion dur="1.5s" repeatCount="indefinite"><mpath href="#flowArch2" /></animateMotion>
+    </circle>
+
+    <!-- Node A: Client UI -->
+    <g transform="translate(32, 168)">
+      <rect width="120" height="62" rx="14" fill="#131829" stroke="#1E293B" stroke-width="1.5" />
+      <text x="60" y="28" class="sans" font-size="12.5" font-weight="700" fill="#F8FAFC" text-anchor="middle">Modern UI</text>
+      <text x="60" y="46" class="mono" font-size="10" fill="#38BDF8" text-anchor="middle">Next.js · React</text>
+    </g>
+
+    <!-- Node B: Core API & AI -->
+    <g transform="translate(238, 162)">
+      <rect width="144" height="74" rx="16" fill="#171530" stroke="#8B5CF6" stroke-width="1.5" />
+      <text x="72" y="32" class="sans" font-size="13" font-weight="700" fill="#FFFFFF" text-anchor="middle">AI &amp; API Core</text>
+      <text x="72" y="51" class="mono" font-size="10" fill="#C084FC" text-anchor="middle">LLMs · Node · Python</text>
+    </g>
+
+    <!-- Node C: Cloud & Data -->
+    <g transform="translate(468, 168)">
+      <rect width="136" height="62" rx="14" fill="#131829" stroke="#1E293B" stroke-width="1.5" />
+      <text x="68" y="28" class="sans" font-size="12.5" font-weight="700" fill="#F8FAFC" text-anchor="middle">Data &amp; Scale</text>
+      <text x="68" y="46" class="mono" font-size="10" fill="#10B981" text-anchor="middle">Postgres · Vector</text>
+    </g>
+  </g>
+
+  <!-- =========================================================================
+       CARD 2 (TOP-RIGHT, 340px): ULTRA INSTINCT ORBITAL HUD
+       ========================================================================= -->
+  <g transform="translate(656, 0)">
+    <rect x="2" y="2" width="340" height="256" rx="22" fill="url(#bentoAccentCard)" stroke="url(#glassBorder)" stroke-width="1.5" />
+    <rect x="2" y="2" width="340" height="256" rx="22" fill="url(#glowViolet)" />
+
+    <text x="30" y="42" class="mono" font-size="11" font-weight="600" fill="#C084FC" letter-spacing="1.8">
+      02 // NEURAL ENGINE
+    </text>
+
+    <!-- Minimalist Aesthetic Orbit Rings -->
+    <g transform="translate(172, 134)">
+      <g>
+        <circle cx="0" cy="0" r="68" fill="none" stroke="#334155" stroke-width="1.2" stroke-dasharray="10 8" />
+        <circle cx="0" cy="-68" r="4" fill="#38BDF8" />
+        <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="14s" repeatCount="indefinite" />
+      </g>
+      <g>
+        <circle cx="0" cy="0" r="48" fill="none" stroke="#8B5CF6" stroke-width="1.5" stroke-dasharray="28 14" stroke-opacity="0.75" />
+        <circle cx="0" cy="48" r="3.5" fill="#C084FC" />
+        <animateTransform attributeName="transform" type="rotate" from="360" to="0" dur="9s" repeatCount="indefinite" />
+      </g>
+      <circle cx="0" cy="0" r="28" fill="#131629" stroke="#38BDF8" stroke-width="1.5" />
+      <text x="0" y="4" class="mono" font-size="11" font-weight="700" fill="#F8FAFC" text-anchor="middle">P3RM4</text>
+    </g>
+
+    <text x="172" y="234" class="mono" font-size="11" fill="#94A3B8" text-anchor="middle" letter-spacing="1">
+      STATUS: <tspan fill="#10B981" font-weight="700">PEAK PERFORMANCE</tspan>
+    </text>
+  </g>
+
+  <!-- =========================================================================
+       CARD 3 (BOTTOM-LEFT, 488px): SLEEK MODERN TERMINAL CARD
+       ========================================================================= -->
+  <g transform="translate(0, 276)">
+    <rect x="2" y="2" width="488" height="260" rx="22" fill="url(#bentoCard)" stroke="url(#glassBorder)" stroke-width="1.5" />
+
+    <!-- macOS Minimal Dots -->
+    <circle cx="30" cy="32" r="5" fill="#EF4444" fill-opacity="0.8" />
+    <circle cx="46" cy="32" r="5" fill="#F59E0B" fill-opacity="0.8" />
+    <circle cx="62" cy="32" r="5" fill="#10B981" fill-opacity="0.8" />
+    <text x="246" y="36" class="mono" font-size="11" fill="#64748B" text-anchor="middle">hassan@p3rm4 — studio</text>
+    <line x1="2" y1="52" x2="490" y2="52" stroke="#1E293B" stroke-width="1" />
+
+    <g transform="translate(28, 84)" class="mono" font-size="12.5">
+      <text x="0" y="0">
+        <tspan fill="#38BDF8">❯</tspan><tspan fill="#F8FAFC"> whoami</tspan>
+      </text>
+      <text x="0" y="24" fill="#94A3B8">
+        Hassan Sial · Full-Stack &amp; AI Engineer
+      </text>
+
+      <text x="0" y="60">
+        <tspan fill="#C084FC">❯</tspan><tspan fill="#F8FAFC"> cat focus.json</tspan>
+      </text>
+      <text x="0" y="84" fill="#CBD5E1">
+        { <tspan fill="#38BDF8">"web"</tspan>: <tspan fill="#A7F3D0">"Next.js, React, TypeScript"</tspan>,
+      </text>
+      <text x="0" y="106" fill="#CBD5E1">
+          <tspan fill="#38BDF8">"ai"</tspan>: <tspan fill="#A7F3D0">"LLM Agents, RAG, Automation"</tspan>,
+      </text>
+      <text x="0" y="128" fill="#CBD5E1">
+          <tspan fill="#38BDF8">"mindset"</tspan>: <tspan fill="#C084FC">"Always Shipping ✦"</tspan> }
+      </text>
+    </g>
+  </g>
+
+  <!-- =========================================================================
+       CARD 4 (BOTTOM-RIGHT, 488px): AESTHETIC FOCUS & SPECIALTIES
+       ========================================================================= -->
+  <g transform="translate(508, 276)">
+    <rect x="2" y="2" width="490" height="260" rx="22" fill="url(#bentoCard)" stroke="url(#glassBorder)" stroke-width="1.5" />
+    <rect x="2" y="2" width="490" height="260" rx="22" fill="url(#glowCyan)" />
+
+    <text x="32" y="42" class="mono" font-size="11" font-weight="600" fill="#38BDF8" letter-spacing="1.8">
+      03 // WHAT I CRAFT
+    </text>
+    <text x="32" y="74" class="sans" font-size="21" font-weight="700" fill="#F8FAFC">
+      Built for Speed &amp; Aesthetics
+    </text>
+
+    <!-- 3 Sleek Horizontal Glass Rows -->
+    <g transform="translate(32, 98)" class="sans">
+      <rect x="0" y="0" width="428" height="40" rx="10" fill="#121626" stroke="#1E293B" stroke-width="1" />
+      <text x="16" y="25" font-size="13" font-weight="600" fill="#F8FAFC">✦  High-Performance Web Apps</text>
+      <text x="412" y="25" class="mono" font-size="11" fill="#38BDF8" text-anchor="end">Next.js · TS</text>
+
+      <rect x="0" y="50" width="428" height="40" rx="10" fill="#121626" stroke="#1E293B" stroke-width="1" />
+      <text x="16" y="75" font-size="13" font-weight="600" fill="#F8FAFC">⚡  AI Agents &amp; Smart Workflows</text>
+      <text x="412" y="75" class="mono" font-size="11" fill="#C084FC" text-anchor="end">Python · LLMs</text>
+
+      <rect x="0" y="100" width="428" height="40" rx="10" fill="#121626" stroke="#1E293B" stroke-width="1" />
+      <text x="16" y="125" font-size="13" font-weight="600" fill="#F8FAFC">🛡️  Scalable APIs &amp; Automation</text>
+      <text x="412" y="125" class="mono" font-size="11" fill="#10B981" text-anchor="end">Node · Cloud</text>
+    </g>
+  </g>
+</svg>
