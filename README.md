@@ -8,15 +8,23 @@
 
 <br/><br/>
 
-<img src="./hero-bento.svg" width="100%" alt="Hassan Sial — Full-Stack & AI Engineer" />
+<img src="./hero-bento.svg" width="100%" alt="Hassan Sial — Full-Stack &amp; AI Systems Architect" />
 
 <br/><br/>
 
-<img src="./bento-grid.svg" width="100%" alt="Hassan Sial — 2026 Bento Grid Architecture" />
+<img src="./luxury-specs.svg" width="100%" alt="P3RM4 Engineering Telemetry &amp; Benchmarks" />
 
 <br/><br/>
 
-<img src="https://skillicons.dev/icons?i=ts,js,python,react,nextjs,nodejs,tailwind,postgres,docker,git&perline=10" alt="Core Tech Stack" />
+<img src="./bento-grid.svg" width="100%" alt="P3RM4 2026 Bento Architecture" />
+
+<br/><br/>
+
+<img src="./flagship-card.svg" width="100%" alt="P3RM4 Nexus Flagship Platform" />
+
+<br/><br/>
+
+<img src="https://skillicons.dev/icons?i=ts,js,python,react,nextjs,nodejs,tailwind,postgres,docker,git&perline=10" alt="Core Tech Arsenal" />
 
 <br/><br/>
 

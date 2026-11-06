@@ -1,0 +1,118 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 240" width="100%" height="100%">
+  <defs>
+    <linearGradient id="cardBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0B0E17" />
+      <stop offset="50%" stop-color="#080A11" />
+      <stop offset="100%" stop-color="#100C1D" />
+    </linearGradient>
+    <linearGradient id="tileBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#141929" />
+      <stop offset="100%" stop-color="#0C0F1A" />
+    </linearGradient>
+    <linearGradient id="tileBorder" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.35" />
+      <stop offset="50%" stop-color="#334155" stop-opacity="0.2" />
+      <stop offset="100%" stop-color="#8B5CF6" stop-opacity="0.35" />
+    </linearGradient>
+    <linearGradient id="cyanGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38BDF8" />
+      <stop offset="100%" stop-color="#00F5D4" />
+    </linearGradient>
+    <linearGradient id="violetGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#A855F7" />
+      <stop offset="100%" stop-color="#EC4899" />
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#F59E0B" />
+      <stop offset="100%" stop-color="#10B981" />
+    </linearGradient>
+    <radialGradient id="auroraGlow" cx="50%" cy="0%" r="70%">
+      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.14" />
+      <stop offset="100%" stop-color="#38BDF8" stop-opacity="0" />
+    </radialGradient>
+    <filter id="glowEffect" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+    <style>
+      .sans { font-family: -apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', Roboto, sans-serif; }
+      .mono { font-family: 'JetBrains Mono', 'Fira Code', Consolas, monospace; }
+      .pulse-dot { animation: pulseAnim 2s infinite ease-in-out; }
+      @keyframes pulseAnim {
+        0%, 100% { opacity: 0.9; transform: scale(1); }
+        50% { opacity: 0.35; transform: scale(0.9); }
+      }
+    </style>
+  </defs>
+
+  <!-- Outer Luxury Container -->
+  <rect x="2" y="2" width="996" height="236" rx="22" fill="url(#cardBg)" stroke="url(#tileBorder)" stroke-width="1.5" />
+  <rect x="2" y="2" width="996" height="236" rx="22" fill="url(#auroraGlow)" />
+
+  <!-- Header Category Line -->
+  <g transform="translate(32, 34)">
+    <circle cx="6" cy="6" r="4.5" fill="#10B981" class="pulse-dot" />
+    <text x="22" y="10" class="mono" font-size="11.5" font-weight="700" fill="#94A3B8" letter-spacing="2">
+      ENGINEERING TELEMETRY &amp; BENCHMARKS // P3RM4 CORE
+    </text>
+    <text x="934" y="10" class="mono" font-size="10.5" fill="#64748B" text-anchor="end" letter-spacing="1.5">
+      TIER-1 ARCHITECTURE
+    </text>
+  </g>
+
+  <!-- ================= 3 ELITE METRIC CARDS ================= -->
+
+  <!-- Tile 1: Latency & Speed -->
+  <g transform="translate(32, 60)">
+    <rect width="298" height="150" rx="16" fill="url(#tileBg)" stroke="url(#tileBorder)" stroke-width="1.2" />
+    
+    <text x="24" y="32" class="mono" font-size="11" font-weight="600" fill="#64748B" letter-spacing="1.2">
+      PERFORMANCE METRIC
+    </text>
+    <text x="24" y="78" class="sans" font-size="40" font-weight="800" fill="url(#cyanGrad)" letter-spacing="-1">
+      &lt; 35ms
+    </text>
+    <text x="24" y="104" class="sans" font-size="13" font-weight="600" fill="#E2E8F0">
+      Edge Latency &amp; P99 Response
+    </text>
+    <text x="24" y="126" class="mono" font-size="10.5" fill="#94A3B8">
+      Distributed Global CDN · Async Rust/Go
+    </text>
+  </g>
+
+  <!-- Tile 2: Reliability & Security -->
+  <g transform="translate(350, 60)">
+    <rect width="298" height="150" rx="16" fill="url(#tileBg)" stroke="url(#tileBorder)" stroke-width="1.2" />
+    
+    <text x="24" y="32" class="mono" font-size="11" font-weight="600" fill="#64748B" letter-spacing="1.2">
+      SYSTEM RELIABILITY
+    </text>
+    <text x="24" y="78" class="sans" font-size="40" font-weight="800" fill="url(#goldGrad)" letter-spacing="-1">
+      99.99%
+    </text>
+    <text x="24" y="104" class="sans" font-size="13" font-weight="600" fill="#E2E8F0">
+      Zero-Downtime Resilience
+    </text>
+    <text x="24" y="126" class="mono" font-size="10.5" fill="#94A3B8">
+      Zero-Trust Auth · Fault-Tolerant Sharding
+    </text>
+  </g>
+
+  <!-- Tile 3: AI Orchestration & Scale -->
+  <g transform="translate(668, 60)">
+    <rect width="298" height="150" rx="16" fill="url(#tileBg)" stroke="url(#tileBorder)" stroke-width="1.2" />
+    
+    <text x="24" y="32" class="mono" font-size="11" font-weight="600" fill="#64748B" letter-spacing="1.2">
+      AUTONOMOUS SCALE
+    </text>
+    <text x="24" y="78" class="sans" font-size="40" font-weight="800" fill="url(#violetGrad)" letter-spacing="-1">
+      Multi-Agent
+    </text>
+    <text x="24" y="104" class="sans" font-size="13" font-weight="600" fill="#E2E8F0">
+      Self-Healing AI Pipelines
+    </text>
+    <text x="24" y="126" class="mono" font-size="10.5" fill="#94A3B8">
+      Vector RAG · Dynamic Context Memory
+    </text>
+  </g>
+</svg>
